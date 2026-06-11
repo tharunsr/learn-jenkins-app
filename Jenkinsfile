@@ -15,6 +15,7 @@ pipeline {
                 }
             }
             steps {
+                input 'Shall I proceed ? '
                 sh '''
                     ls -la
                     node --version
